@@ -1,14 +1,14 @@
 import { Image } from "expo-image";
 import { StyleSheet, Text, View } from "react-native";
 
-export const Card = (props) => {
+export const Card = ({id, img, name, age, date}) => {
   return (
     <View>
-      <Text>{props.id}</Text>
-      <Image style={s.img} source={props.img} />
-      <Text>{props.name}</Text>
-      <Text>{props.age}</Text>
-      <Text>{props.date}</Text>
+      <Text>{id}</Text>
+      <Image style={s.img} source={img} />
+      <Text>{name}</Text>
+      <Text>{age}</Text>
+      <Text>{date}</Text>
     </View>
   );
 };
