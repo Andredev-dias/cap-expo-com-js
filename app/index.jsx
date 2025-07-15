@@ -65,7 +65,11 @@ export default function Principal() {
           </Text>
 
           <TouchableOpacity style={s.btn} onPress={navegar}>
-            <Text style={s.mainText}>Ir para os cards</Text>
+            <Text style={s.mainText}>Ir para a lista</Text>
+          </TouchableOpacity>
+
+           <TouchableOpacity style={s.btn} onPress={() => router.push("/consume")}>
+            <Text style={s.mainText}>Ir para a API</Text>
           </TouchableOpacity>
         </View>
       </ScrollView>
